@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Keia ❤️</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    min-height:100vh;
+    overflow-x:hidden;
+
+    background:
+    radial-gradient(circle at top,#ff4d4d 0%,transparent 40%),
+    linear-gradient(
+    180deg,
+    #4d0000 0%,
+    #800000 25%,
+    #b30000 50%,
+    #800000 75%,
+    #4d0000 100%);
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background-image:
+    radial-gradient(rgba(255,255,255,.15) 1px,transparent 1px);
+    background-size:30px 30px;
+    pointer-events:none;
+}
+
+.container{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+    position:relative;
+    z-index:5;
+}
+
+h1{
+    color:white;
+    text-align:center;
+    font-size:4rem;
+    margin-bottom:30px;
+
+    text-shadow:
+    0 0 10px #ff4d4d,
+    0 0 20px #ff4d4d,
+    0 0 40px #ff1a1a,
+    0 0 60px #ff0000;
+}
+
+.envelope{
+    width:350px;
+    height:220px;
+    position:relative;
+    cursor:pointer;
+    animation:pulse 2s infinite;
+}
+
+.front{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:#ff2e2e;
+    border-radius:12px;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:15px;
+    box-shadow:0 0 40px rgba(255,0,0,.5);
+}
+
+.front h3{
+    margin-top:10px;
+}
+
+.flap{
+    position:absolute;
+    width:0;
+    height:0;
+    border-left:175px solid transparent;
+    border-right:175px solid transparent;
+    border-top:120px solid #cc0000;
+    transform-origin:top;
+    transition:1s;
+    z-index:20;
+}
+
+.envelope.open .flap{
+    transform:rotateX(180deg);
+}
+
+.letter{
+    display:none;
+    max-width:900px;
+    margin-top:40px;
+    background:white;
+    color:#333;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 0 50px rgba(255,255,255,.4);
+    line-height:1.8;
+    animation:fadeIn 1s ease;
+}
+
+.letter h2{
+    color:#cc0000;
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.balloon{
+    position:fixed;
+    bottom:-100px;
+    z-index:1;
+    animation:floatUp linear infinite;
+}
+
+.heart{
+    position:fixed;
+    color:#ffb3b3;
+    z-index:0;
+    animation:sparkle 4s infinite;
+}
+
+@keyframes floatUp{
+    from{
+        transform:translateY(0);
+    }
+    to{
+        transform:translateY(-120vh);
+    }
+}
+
+@keyframes sparkle{
+    0%{opacity:.2;}
+    50%{opacity:1;}
+    100%{opacity:.2;}
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes pulse{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.05);}
+    100%{transform:scale(1);}
+}
+
+@media(max-width:600px){
+
+h1{
+    font-size:2.5rem;
+}
+
+.envelope{
+    width:300px;
+    height:200px;
+}
+
+.flap{
+    border-left:150px solid transparent;
+    border-right:150px solid transparent;
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Happy Birthday Keia ❤️</h1>
+
+<div class="envelope" onclick="openLetter()">
+
+<div class="flap"></div>
+
+<div class="front">
+<h2>💌</h2>
+<h3>My Heart Warming Message For You</h3>
+<p>Click To Open ❤️</p>
+</div>
+
+</div>
+
+<div class="letter" id="letter">
+
+<h2>❤️ Happy Birthday Keia ❤️</h2>
+
+<p>
+Hi, Keia! Happy Birthday!
+<br><br>
+
+Honestly, I never expected our friendship to happen, but I'm really grateful that it did. Out of all the unexpected things that happened in my life, meeting you and becoming friends with you is something I'll always be thankful for.
+
+<br><br>
+
+Thank you for being someone who genuinely cares about my feelings, for sharing little moments with me, for watching movies with me, and for staying by my side even when I'm at my lowest. You might not realize it, but those little things mean so much to me. Sometimes, it's not about the big things someone does for you, but the way they make you feel cared for and remind you that you're not alone. And I'm really thankful that I got to experience that kind of friendship with you.
+
+<br><br>
+
+On your special day, I hope you feel just how loved and appreciated you are. You deserve all the happiness, love, and beautiful things life has to offer. I hope this new chapter of your life brings you countless reasons to smile, moments worth remembering, and people who will care for you just as much as you care for others.
+
+<br><br>
+
+I remember asking you what you wanted for your birthday and telling you that I'd give you money, but you wouldn't accept it. So, instead of giving you something you didn't want, I decided to make something different. I made this website dedicated entirely to you because I wanted to give you something more personal, something that I actually put my time, effort, and heart into making.
+
+<br><br>
+
+I wanted you to have something you could look back on and remember that someone took the time to create something special just for you. This website might not be the most expensive gift in the world, but every part of it was made with the intention of making you feel special on your birthday.
+
+<br><br>
+
+Thank you for coming into my life, Keia. Thank you for the memories, the laughter, the movie nights, and for being someone I can appreciate in ways that words sometimes can't fully explain. I'm really glad that our paths crossed, and I hope our friendship continues to grow and gives us more memories to look back on someday.
+
+<br><br>
+
+Happy Birthday again, Keia! I hope you enjoy your special day and never forget how much you deserve to be appreciated. This little website is my way of reminding you that, today, everything here is about you. You deserve to be celebrated, not just today, but every day.
+
+<br><br>
+
+With lots of love and appreciation ❤️
+</p>
+
+</div>
+
+</div>
+
+<script>
+
+function openLetter(){
+    document.querySelector('.envelope').classList.add('open');
+    document.getElementById('letter').style.display='block';
+
+    document.getElementById('letter')
+    .scrollIntoView({behavior:'smooth'});
+}
+
+for(let i=0;i<80;i++){
+
+    const balloon=document.createElement("div");
+    balloon.classList.add("balloon");
+
+    balloon.innerHTML="🎈❤️";
+
+    balloon.style.left=Math.random()*100+"vw";
+    balloon.style.fontSize=(20+Math.random()*20)+"px";
+    balloon.style.animationDuration=(6+Math.random()*8)+"s";
+    balloon.style.animationDelay=Math.random()*5+"s";
+
+    document.body.appendChild(balloon);
+}
+
+for(let i=0;i<120;i++){
+
+    const heart=document.createElement("div");
+    heart.classList.add("heart");
+
+    heart.innerHTML="❤️";
+
+    heart.style.left=Math.random()*100+"vw";
+    heart.style.top=Math.random()*100+"vh";
+    heart.style.fontSize=(10+Math.random()*25)+"px";
+    heart.style.animationDelay=Math.random()*4+"s";
+
+    document.body.appendChild(heart);
+}
+
+</script>
+
+</body>
+</html>
